@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
           if the dwell place in an area. Arabic proverb says that seek science
           though to the land of China.
         </p>
+        <ReactPlayer url="https://youtu.be/-vQWWGzCf8I" />
       </div>
     </div>
   );
