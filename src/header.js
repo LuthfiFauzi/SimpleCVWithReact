@@ -6,7 +6,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState('home');
 
   return (
-    <div className="header" style={{ backgroundColor: 'white' }}>
+    <div className="header">
       {listName.map((name) => {
         return (
           <Link to={`/${name}`} key={name}>

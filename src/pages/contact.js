@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div style={{ backgroundColor: 'white' }}>
+    <div className="content">
       <h2>GOT QUESTIONS?</h2>
       <p>
         The easiest thing to do is post on our

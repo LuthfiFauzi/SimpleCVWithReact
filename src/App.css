@@ -15,7 +15,19 @@ body {
   display: inline-block;
 }
 .content {
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
   background-color: white;
+}
+.header {
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  text-transform: uppercase;
 }
 h1,
 h2,

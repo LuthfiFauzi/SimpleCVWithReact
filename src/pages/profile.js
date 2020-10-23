@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = () => {
   return (
-    <div style={{ backgroundColor: 'white' }}>
+    <div className="content" style={{ backgroundColor: 'white' }}>
       <h1>MY EXPERIENCE</h1>
       <p>
         I am a telecommunications engineer. I have some experience working on

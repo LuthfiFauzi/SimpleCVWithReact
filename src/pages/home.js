@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
+import React, { useState } from 'react';
+import useTitle from '../utility/customHook';
 
 const Home = () => {
+  const [count, setCount] = useTitle();
+  const [myNumber, setMyNumber] = useState(0);
   return (
-    <div>
-      {' '}
-      <div style={{ backgroundColor: 'white' }}>
+    <div className="content">
+      <div>
         <h1>Luthfi Fauzi</h1>
         <p>
           Life is about learning. Learn to be someone who tries to get better.
@@ -22,7 +23,26 @@ const Home = () => {
           if the dwell place in an area. Arabic proverb says that seek science
           though to the land of China.
         </p>
-        <ReactPlayer url="https://youtu.be/-vQWWGzCf8I" />
+        <div>
+          <h1>Welcome Home!</h1>
+          <button
+            type="button"
+            onClick={() => {
+              setCount(count + 1);
+            }}
+          >
+            Click me
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setMyNumber(myNumber + 1);
+            }}
+          >
+            Click myNumber
+          </button>
+          <h2>{myNumber}</h2>
+        </div>
       </div>
     </div>
   );
