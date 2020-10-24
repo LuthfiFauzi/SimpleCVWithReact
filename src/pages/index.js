@@ -10,5 +10,7 @@ const Home = () => {
 
 export default Home;
 export { default as Home } from './home';
-export { default as Profile } from './profile';
+export { default as Education } from './education';
+export { default as Experience } from './experience';
+export { default as Achievement } from './achievement';
 export { default as Contact } from './contact';

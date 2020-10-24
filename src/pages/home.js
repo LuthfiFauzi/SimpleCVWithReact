@@ -2,48 +2,60 @@ import React, { useState } from 'react';
 import useTitle from '../utility/customHook';
 
 const Home = () => {
-  const [count, setCount] = useTitle();
   const [myNumber, setMyNumber] = useState(0);
   return (
-    <div className="content">
-      <div>
-        <h1>Luthfi Fauzi</h1>
-        <p>
-          Life is about learning. Learn to be someone who tries to get better.
-          Knowing the uninitiated, justifying the incorrect, fixing the
-          incomplete and benefiting others. From learning we can give benefit to
-          others. The best person is someone who benefits others. However,
-          science and religion must be balanced. The man who is not based on
-          faith will be dark.
-        </p>
-        <p>
-          Likewise, people who believe without knowledge will not mean anything.
-          But learning is fun and exciting. Learning is about hijra and
-          traveling. Science in the world is very broad, can not only be learned
-          if the dwell place in an area. Arabic proverb says that seek science
-          though to the land of China.
-        </p>
+    <div>
+      <section className="content">
+        <section className="right">
+          <img src="/image/luthfi.JPG" alt="" />
+        </section>
+        <section className="left">
+          <h1 className="bigTitle">ABOUT ME</h1>
+          <p>
+            I have dream as a professional cybersecurity engineer, so I choose a
+            job that was re- levant to my career poals. I am a fresh Graduate
+            from Telkom University. I have pood expertise in network engineering
+            too.
+          </p>
+          <p>
+            I have some certifications of networking, such as MTCNA and MTCRE,
+            and some professional courses, such as CCNA Cybersecurity Operations
+            and Introductions to Network. I am sure, I can be a professional
+            cybersecurity engineer for 5 years later.
+          </p>
+        </section>
+      </section>
+      <section className="content">
         <div>
-          <h1>Welcome Home!</h1>
-          <button
-            type="button"
-            onClick={() => {
-              setCount(count + 1);
-            }}
-          >
-            Click me
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setMyNumber(myNumber + 1);
-            }}
-          >
-            Click myNumber
-          </button>
-          <h2>{myNumber}</h2>
+          <section className="right">
+            <h1
+              className="bigTitle"
+              style={{ paddingLeft: '20%', width: '1000px' }}
+            >
+              HITUNG JUMLAH KLIKMU!
+            </h1>
+            <p style={{ paddingLeft: '20%', width: '1000px' }}>
+              Kamu bisa melihat jumlah klik kamu disini.
+            </p>
+          </section>
+          <section className="left" style={{ textAlign: 'center' }}>
+            <button
+              type="button"
+              onClick={() => {
+                setMyNumber(myNumber + 1);
+              }}
+            >
+              HITUNG
+            </button>
+            <h1
+              className="bigTitle"
+              style={{ textAlign: 'center', paddingTop: '-100px' }}
+            >
+              {myNumber}
+            </h1>
+          </section>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
