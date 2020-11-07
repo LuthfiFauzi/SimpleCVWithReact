@@ -1,4 +1,11 @@
-import { Home, Experience, Education, Achievement, Contact } from '../pages';
+import {
+  Home,
+  Experience,
+  Education,
+  Achievement,
+  Contact,
+  InfoCorona,
+} from '../pages';
 
 const routes = [
   // private Route
@@ -27,6 +34,11 @@ const routes = [
   {
     path: '/home',
     component: Home,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona',
+    component: InfoCorona,
     isPublic: true,
   },
   {
