@@ -19,7 +19,11 @@ const NewsPerDate = (props) => {
   const { data } = props;
 
   return (
+<<<<<<< Updated upstream
     <div className="content">
+=======
+    <div className="">
+>>>>>>> Stashed changes
       <Link to={`/infoCorona/${data.date}`}>
         <h3>{data.date}</h3>
       </Link>
@@ -45,7 +49,11 @@ const CoronaNews = () => {
   }, []);
 
   return (
+<<<<<<< Updated upstream
     <div className="center">
+=======
+    <div>
+>>>>>>> Stashed changes
       {isLoading ? (
         <p>loading</p>
       ) : (

@@ -13,6 +13,7 @@ const Corona = () => {
     });
   }, []);
 
+<<<<<<< Updated upstream
   return (
     <div>
       <h2>Data corona</h2>
@@ -21,3 +22,6 @@ const Corona = () => {
 };
 
 export default Corona;
+=======
+export default CoronaNews;
+>>>>>>> Stashed changes
