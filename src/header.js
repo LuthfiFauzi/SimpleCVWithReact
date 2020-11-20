@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const listName = [
+  const listMenu = [
     'home',
     'experience',
     'education',
     'achievement',
     'contact',
   ];
-  const [isActive, setIsActive] = useState('home');
-
   return (
     <div className="header">
-      {listName.map((name) => {
+      {listMenu.map((name) => {
         return (
           <Link to={`/${name}`} key={name}>
             <div className="menu">{name}</div>

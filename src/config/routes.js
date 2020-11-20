@@ -1,4 +1,16 @@
+<<<<<<< Updated upstream
 import { Home, Experience, Education, Achievement, Contact } from '../pages';
+=======
+import {
+  Home,
+  Experience,
+  Education,
+  Achievement,
+  Contact,
+  InfoCorona,
+  DetailDate,
+} from '../pages';
+>>>>>>> Stashed changes
 
 const routes = [
   // private Route
@@ -30,6 +42,19 @@ const routes = [
     isPublic: true,
   },
   {
+<<<<<<< Updated upstream
+=======
+    path: '/infoCorona/:dateId',
+    component: DetailDate,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona',
+    component: InfoCorona,
+    isPublic: true,
+  },
+  {
+>>>>>>> Stashed changes
     path: '/',
     component: Home,
     isPublic: true,
