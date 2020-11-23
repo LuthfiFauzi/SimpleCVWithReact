@@ -8,6 +8,7 @@ const Header = () => {
     'education',
     'achievement',
     'contact',
+    'infoCorona',
   ];
   const [isActive, setIsActive] = useState('home');
 

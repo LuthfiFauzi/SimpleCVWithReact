@@ -14,3 +14,4 @@ export { default as Education } from './education';
 export { default as Experience } from './experience';
 export { default as Achievement } from './achievement';
 export { default as Contact } from './contact';
+export { default as InfoCorona } from './infoCorona';

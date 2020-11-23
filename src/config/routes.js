@@ -1,4 +1,12 @@
-import { Home, Experience, Education, Achievement, Contact } from '../pages';
+import {
+  Home,
+  Experience,
+  Education,
+  Achievement,
+  Contact,
+  InfoCorona,
+} from '../pages';
+import DetailDate from '../pages/detailDate';
 
 const routes = [
   // private Route
@@ -27,6 +35,16 @@ const routes = [
   {
     path: '/home',
     component: Home,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona/:dateId',
+    component: DetailDate,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona',
+    component: InfoCorona,
     isPublic: true,
   },
   {
