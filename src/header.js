@@ -8,6 +8,11 @@ const Header = () => {
     'education',
     'achievement',
     'contact',
+<<<<<<< Updated upstream:src/header.js
+=======
+    'infoCorona',
+    'loginProfile',
+>>>>>>> Stashed changes:src/components/headerPage/index.js
   ];
   const [isActive, setIsActive] = useState('home');
 
