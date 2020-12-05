@@ -19,7 +19,7 @@ const NewsPerDate = (props) => {
   const { data } = props;
 
   return (
-    <div className="content">
+    <div>
       <Link to={`/infoCorona/${data.date}`}>
         <h3>{data.date}</h3>
       </Link>
@@ -47,7 +47,7 @@ const CoronaNews = () => {
   return (
     <div className="center_view">
       {isLoading ? (
-        <p className="content">Loading. . . .</p>
+        <p>loading</p>
       ) : (
         news.map((newsPerDate) => {
           return <NewsPerDate key={newsPerDate.date} data={newsPerDate} />;
