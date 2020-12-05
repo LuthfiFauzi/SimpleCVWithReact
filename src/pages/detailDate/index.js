@@ -42,7 +42,6 @@ const DetailDate = () => {
 
   return (
     <div className="center_view">
-      <h2> Info Corona Detail</h2>
       {!isLoading && news.length > 0 ? (
         <NewsItem news={news} />
       ) : (

@@ -26,7 +26,7 @@ const Profile = () => {
   }, [userId]);
 
   return (
-    <div>
+    <div className="content">
       <h1> My Profile!</h1>
       {userDataLoading ? (
         <span>Loading...</span>

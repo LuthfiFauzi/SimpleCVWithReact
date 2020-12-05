@@ -47,7 +47,7 @@ const CoronaNews = () => {
   return (
     <div className="center_view">
       {isLoading ? (
-        <p>loading</p>
+        <p>loading. . .</p>
       ) : (
         news.map((newsPerDate) => {
           return <NewsPerDate key={newsPerDate.date} data={newsPerDate} />;
