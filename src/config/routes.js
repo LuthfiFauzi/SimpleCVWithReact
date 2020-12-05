@@ -52,6 +52,21 @@ const routes = [
     isPublic: true,
   },
   {
+    path: '/login',
+    component: Login,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona/:dateId',
+    component: DetailDate,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona',
+    component: InfoCorona,
+    isPublic: true,
+  },
+  {
     path: '/',
     component: Home,
     isPublic: true,
