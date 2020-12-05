@@ -39,8 +39,8 @@ const Education = () => {
           <p>
             I have successfully achieved student-level credentials for
             completing CCNA Cybersecurity Operations course administered by the
-            undersigned instructor. I have su- ccessfully too CCNA Introduction
-            to The Networks.
+            undersigned instructor. I have successfully too CCNA Introduction to
+            The Networks.
           </p>
         </section>
       </section>

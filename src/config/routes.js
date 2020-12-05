@@ -1,18 +1,26 @@
-<<<<<<< Updated upstream
-import { Home, Experience, Education, Achievement, Contact } from '../pages';
-=======
 import {
   Home,
+  Profile,
   Experience,
   Education,
-  Achievement,
   Contact,
+  Login,
+  ProfileId,
   InfoCorona,
   DetailDate,
 } from '../pages';
->>>>>>> Stashed changes
 
 const routes = [
+  {
+    path: '/profile/:profileId',
+    component: ProfileId,
+    isPublic: false,
+  },
+  {
+    path: '/profile',
+    component: Profile,
+    isPublic: false,
+  },
   // private Route
   {
     path: '/contact',
@@ -21,11 +29,6 @@ const routes = [
   },
 
   // Public Route
-  {
-    path: '/achievement',
-    component: Achievement,
-    isPublic: true,
-  },
   {
     path: '/education',
     component: Education,
@@ -42,8 +45,11 @@ const routes = [
     isPublic: true,
   },
   {
-<<<<<<< Updated upstream
-=======
+    path: '/login',
+    component: Login,
+    isPublic: true,
+  },
+  {
     path: '/infoCorona/:dateId',
     component: DetailDate,
     isPublic: true,
@@ -54,7 +60,6 @@ const routes = [
     isPublic: true,
   },
   {
->>>>>>> Stashed changes
     path: '/',
     component: Home,
     isPublic: true,

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import useTitle from '../utility/customHook';
 
 const Home = () => {
   const [myNumber, setMyNumber] = useState(0);
