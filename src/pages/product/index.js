@@ -33,7 +33,7 @@ const Product = () => {
         <h5>{data.name}</h5>
         <ul key={data.id}>
           <p className="p">
-            ID: {data.id}, Varian: {data.variants[0].slug}
+            Deskripsi: {data.description}. Harga: {data.display_normal_price}
           </p>
         </ul>
       </ul>
