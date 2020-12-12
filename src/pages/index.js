@@ -1,7 +1,7 @@
 export { default as Home } from './home/index';
 export { default as Education } from './education/index';
 export { default as Experience } from './experience/index';
-export { default as Contact } from './contact';
+export { default as Product } from './product/index';
 export { default as Login } from './login/index';
 export { default as Profile } from './profile';
 export { default as ProfileId } from './profileId';

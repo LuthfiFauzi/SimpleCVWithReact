@@ -1,0 +1,8 @@
+.paginate {
+  background-color: white;
+  font-family: sans-serif;
+  display: inline;
+  font-weight: bold;
+  padding: 20px;
+  display: inline-block;
+}

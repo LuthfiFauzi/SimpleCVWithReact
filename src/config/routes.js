@@ -3,7 +3,7 @@ import {
   Profile,
   Experience,
   Education,
-  Contact,
+  Product,
   Login,
   ProfileId,
   InfoCorona,
@@ -23,8 +23,8 @@ const routes = [
   },
   // private Route
   {
-    path: '/contact',
-    component: Contact,
+    path: '/product',
+    component: Product,
     isPublic: false,
   },
 

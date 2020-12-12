@@ -3,14 +3,7 @@ import { Link } from 'react-router-dom';
 import { isUserAuthenticated } from '../../utils/cookie';
 
 const Header = () => {
-  const listMenu = [
-    'home',
-    'profile',
-    'experience',
-    'education',
-    'contact',
-    'infoCorona',
-  ];
+  const listMenu = ['home', 'experience', 'education', 'product', 'infoCorona'];
 
   return (
     <div className="header">
@@ -21,6 +14,7 @@ const Header = () => {
           </Link>
         );
       })}
+
       {isUserAuthenticated() ? <span>logout</span> : <div />}
     </div>
   );

@@ -14,9 +14,10 @@ const Login = () => {
       .login(username, password)
       .then((res) => {
         const cookieToken = res.token;
-        //    const cookieUser = res.user;
-        //    setCookie('userData', JSON.stringify(cookieUser), 10000);
+        //  const cookieUser = res.user;
+        //  setCookie('userData', JSON.stringify(cookieUser), 10000);
         setCookie('token', JSON.stringify(cookieToken), 10000);
+        window.location.replace('/product');
       })
       .catch((err) => {
         console.log(err);
